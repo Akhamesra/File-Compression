@@ -285,7 +285,9 @@ wrong:
     cout << "Enter 1 to COMPRESS " << endl << "Enter 2 to DECOMPRESS " << endl << "Enter 0 to EXIT " << endl;
     cin >> n;
     if (n == 1) {
-        inFileName = "bible.txt";
+        cout << "Enter file name to be compressed (with extension): ";
+        cin >> inFileName;
+        cout << endl;
         outFileName = "output.huf";
         compress();
     }
